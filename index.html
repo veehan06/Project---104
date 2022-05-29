@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Face Recognition Project
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>
+        FACE RECOGNITION WEB APP
+        </h1>
+        <p id="model">Model is trained to identify the following objects: </p>
+        <h4>Father</h4>
+        <h4>Mother</h4>
+        <h4>Son</h4>
+        <br>
+        <p>Webcam:</p>
+        <div id="camera"></div>
+        <br>
+        <p>Result:</p>
+        <div id="result"></div>
+        <br>
+        <button onclick="webcam();" class="btn btn-danger">Start Webcam</button>
+        <br>
+        <br>
+        <button onclick="capture();" class="btn btn-success">Capture</button>
+        <br>
+        <br>
+        <button onclick="identify();" class="btn btn-info">Identify</button>
+        <br>
+        <br>
+        <div id="familymembername">Family Member: </div>
+        <br>
+        <div id="accuracy">Accuracy: </div>
+        </center>
+    </body>
+</html>
